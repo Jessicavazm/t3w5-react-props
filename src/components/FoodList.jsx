@@ -18,13 +18,14 @@ let foods = [
 // returns ONLY ONE HTML component itself
 // Use curly braces when you want to have JS command in the HTML elements
 // .map method used to run a loop in the foods list array
+// index parameter on map method to uniquely identify components
 export default function FoodList(){
     return (
         <section>
                 {
-                    foods.map(food => {
+                    foods.map((food, index) => {
                         // Create a key-value pair for the props
-                        return <p><FoodCart foodName={food}/></p>
+                        return <p><FoodCart key={index} foodName={food}/></p>
                     })
                 }
         </section>
