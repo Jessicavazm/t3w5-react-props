@@ -23,7 +23,8 @@ export default function FoodList(){
         <section>
                 {
                     foods.map(food => {
-                        return <p><FoodCart /></p>
+                        // Create a key-value pair for the props
+                        return <p><FoodCart foodName={food}/></p>
                     })
                 }
         </section>
