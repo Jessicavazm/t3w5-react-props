@@ -2,7 +2,7 @@
 // Export directly within the function when only it's only function
 export default function Header() {
     return (
-        <h1>React Props lesson</h1>
+        <h1>Food Menu</h1>
     )
 }
 

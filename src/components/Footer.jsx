@@ -1,5 +1,5 @@
 export default function Footer() {
     return (
-        <p>Coder Academy 2024 | Apr</p>
+        <p><b>Coder Academy 2024 | Apr</b></p>
     )
 }

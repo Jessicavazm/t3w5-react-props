@@ -1,3 +1,6 @@
+// import FoodCart component to call it in the FoodList fn
+import FoodCart from "./FoodCard";
+
 let foods = [
     'ramen',
     'sushi',
@@ -18,13 +21,11 @@ let foods = [
 export default function FoodList(){
     return (
         <section>
-            <ul>
                 {
                     foods.map(food => {
-                        return <li>{food}</li>
+                        return <p><FoodCart /></p>
                     })
                 }
-            </ul>
         </section>
     )
 }
